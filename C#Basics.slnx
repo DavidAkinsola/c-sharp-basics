@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="C#Basics/C#Basics.csproj" Id="226e09d3-5fd2-4f0f-80d1-6e0c4e2659ee" />
+  <Project Path="CSharpBasicsNetCore/CSharpBasicsNetCore.csproj" Id="1b229bc8-bcfb-4ec5-8c28-f77d34e9daf1" />
+  <Project Path="TestCSharpBasicsNetCore/TestCSharpBasicsNetCore.csproj" Id="c88fa679-1bd6-4465-a53e-a4f07d6a0772" />
+</Solution>

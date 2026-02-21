@@ -20,7 +20,7 @@ namespace C_Basics.BusinessLogics
             this.C = c;
         }
 
-        public double GetDeterminant()
+        private double GetDeterminant()
         {
             return (B * B) - (4 * A * C);
         }

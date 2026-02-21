@@ -8,12 +8,12 @@ namespace TestCSharpBasicsNetCore.UnitTests
     public class FizzBuzzTest
     {
         [Fact]
-        public void Solve_ReturnsFizz()
+        public void Solve_WhenNumberIsMultipleOf3_ReturnsFizz()
         {
             // Arrange
             var FizzBuzzTest1 = new FizzBuzz(3);
             var FizzBuzzTest2 = new FizzBuzz(6);
-           
+            
 
             // Act
             string result1 = FizzBuzzTest1.Solve();
@@ -26,7 +26,7 @@ namespace TestCSharpBasicsNetCore.UnitTests
         }
 
         [Fact]
-        public void Solve_ReturnsBuzz()
+        public void Solve_WhenNumberIsMultipleOf5_ReturnsBuzz()
         {
             // Arrange
             var FizzBuzzTest1 = new FizzBuzz(5);
@@ -45,7 +45,7 @@ namespace TestCSharpBasicsNetCore.UnitTests
         }
 
         [Fact]
-        public void Solve_ReturnsFizzBuzz()
+        public void Solve_WhenNumberIsMultipleOf3And5_ReturnsFizzBuzz()
         {
             // Arrange
             var FizzBuzzTest1 = new FizzBuzz(15);
@@ -58,7 +58,7 @@ namespace TestCSharpBasicsNetCore.UnitTests
         }
 
         [Fact]
-        public void Solve_ReturnsValueAsString()
+        public void Solve_WhenNumberIsNotMultipleOf3And5_ReturnsNumberAsString()
         {
             // Arrange
             var FizzBuzzTest1 = new FizzBuzz(7);

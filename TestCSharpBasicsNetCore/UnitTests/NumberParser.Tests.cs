@@ -21,18 +21,20 @@ namespace TestCSharpBasicsNetCore.UnitTests
             Assert.Equal("514", _numberParser.AreaCode);
             Assert.Equal("555", _numberParser.CentralOfficeCode);
             Assert.Equal("1234", _numberParser.LineNumber);
+            Assert.Equal("(514)555-1234", _numberParser.ToString());
         }
 
         [Fact]
         public void CheckInvalidPhoneNumber_ReturnsArgumentException()
         {
-            
-            // Act
-            // Assert
+            // Arrange and Act
             var exception = Assert.Throws<ArgumentException>(() => 
                 new NumberParser().Parse("514555123"));
 
+            //Assert
             Assert.Equal("Invalid phone number", exception.Message);
         }
+
+        
     }
 }
